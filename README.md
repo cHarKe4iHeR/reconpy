@@ -12,7 +12,7 @@ A simple, fast reconnaissance pipeline written in Python
 Built and tested on Kali Linux.
 Any system with the tools below:
 
-**Everything you need to run reconpy.py on any Linux system (Kali, Ubuntu, Debian, Arch, etc.) — one single list, nothing missing.**
+**Everything you need to run reconpy.py on any Linux system (Kali, Ubuntu, Debian, Arch, etc.)**
 
 |#|Dependency|How to install (copy-paste)|Why it’s needed|
 |---|---|---|---|
