@@ -1,0 +1,17 @@
+## Requirements
+Built and tested on Kali Linux.
+Any system with the tools below:
+
+**Everything you need to run reconpy.py on any Linux system (Kali, Ubuntu, Debian, Arch, etc.)**
+
+|#|Dependency|How to install (copy-paste)|Why it’s needed|
+|---|---|---|---|
+|1|**Python 3.8+**|sudo apt install -y python3 python3-pip|Runs the script|
+|2|**Go (Golang) 1.21+**|sudo apt install -y golang-go|Required to install httpx (and future tools)|
+|3|**subfinder**|sudo apt install -y subfinder|Passive subdomain enumeration|
+|4|**assetfinder**|sudo apt install -y assetfinder|Second passive subdomain source|
+|5|**httpx (ProjectDiscovery)**|go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest sudo cp ~/go/bin/httpx /usr/local/bin/|Alive host checking + titles (the Go version is mandatory)|
+|6|**nuclei + templates**|sudo apt install -y nuclei nuclei -update-templates|Vulnerability scanner|
+|7|**PATH fix for Go binaries** (once forever)|echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.bashrc source ~/.bashrc|Makes httpx (and future Go tools) available everywhere|
+
+**7 commands total.**
