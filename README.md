@@ -24,16 +24,8 @@ Any system with the tools below:
 |6|**nuclei + templates**|sudo apt install -y nuclei nuclei -update-templates|Vulnerability scanner|
 |7|**PATH fix for Go binaries** (once forever)|echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.bashrc source ~/.bashrc|Makes httpx (and future Go tools) available everywhere|
 
-**That’s literally everything. 7 commands total.**
+**7 commands total.**
 
-```
-sudo apt update
-sudo apt install -y python3 python3-pip golang-go subfinder assetfinder nuclei
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-sudo cp ~/go/bin/httpx /usr/local/bin/ 2>/dev/null || sudo cp ~/go/bin/httpx /usr/bin/
-echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.bashrc && source ~/.bashrc
-nuclei -update-templates
-```
 --------------------------------------------------------------------------
 
 ## How to run commands
