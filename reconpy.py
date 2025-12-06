@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
 """
-reconpy — Fast & Clean Recon Pipeline
-My first real cybersecurity portfolio project
-Author: cHarKe4iHeR | Dec 2025
+Fast & Clean Recon Pipeline
+	cHarKe4iHeR
 """
 
 import argparse
